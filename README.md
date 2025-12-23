@@ -26,3 +26,4 @@ Where there are holes add screws
 | 3D printed case | 1 set |
 | PCB | 1 |
 Case preferably in a frosted white/frosted transparent colorway.
+Also keycaps 4, preferably pbt.
