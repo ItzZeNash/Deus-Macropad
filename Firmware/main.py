@@ -1,46 +1,33 @@
 import board
-
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.scanners.keypad import KeysScanner
 from kmk.keys import KC
-from kmk.modules.macros import Macros, Press, Release, Tap
+from kmk.modules.macros import Macros
 
 keyboard = KMKKeyboard()
-
 macros = Macros()
 keyboard.modules.append(macros)
 
+
 PINS = [
-    board.A0,  # SW1
-    board.A1,  # SW2
-    board.A2,  # SW3
-    board.A3,  # SW4
-    board.D6,  # SW5
-    board.D7,  # SW6
-    board.D0,  # SW7
-    board.D1,  # SW8
-    board.D2,  # SW9
+    board.A2,   # SW1 (GPIO28)
+    board.A3,   # SW2 (GPIO29)
+    board.SCK,  # SW3 (GPIO2)
+    board.RX,   # SW4 (GPIO1)
 ]
 
 keyboard.matrix = KeysScanner(
     pins=PINS,
-    value_when_pressed=False,
-    pull=True,
+    value_when_pressed=False,  # Switches pull to GND when pressed
+    pull=True,                  # Enable internal pull-up resistors
 )
 
 keyboard.keymap = [
     [
-        KC.ESC,                     # SW1
-        KC.TAB,                     # SW2
-        KC.MACRO("8808000"),   # SW3
-
-        KC.LCTRL(KC.C),             # SW4
-        KC.LCTRL(KC.V),             # SW5
-        KC.LCTRL(KC.Z),             # SW6
-
-        KC.MEDIA_PLAY_PAUSE,        # SW7
-        KC.MEDIA_NEXT_TRACK,        # SW8
-        KC.MEDIA_PREV_TRACK,        # SW9
+        KC.LCTRL(KC.HOME),           # SW1 - Scroll to top (Ctrl+Home)
+        KC.PGDN,                     # SW2 - Scroll down (Page Down)
+        KC.MACRO("8808000"),         # SW3 - Type "8808000"
+        KC.LCTRL(KC.LGUI(KC.LEFT)),  # SW4 - Ctrl+Win+Left Arrow
     ]
 ]
 
