@@ -1,5 +1,5 @@
 # Deus-Macropad
-A Macropad for personal use in Blender and Davinci. 4 keys
+A Macropad for personal use in Blender, Davinci and daily life. 4 keys
 
 Schematic
 <img width="1371" height="663" alt="image" src="https://github.com/user-attachments/assets/c652768a-e5f4-43f0-827e-6c8a0af1890a" />
