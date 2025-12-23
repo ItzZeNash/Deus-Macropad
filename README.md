@@ -13,7 +13,7 @@ Case Design
 
 <img width="1909" height="717" alt="image" src="https://github.com/user-attachments/assets/1fbf5cb1-ac6c-433f-8dd7-535dbd61a5c1" /> TOP
 
-Assembly- Assemble the pcb and XIAO, and insert into the bottom case then put on the top case screw and add the heated insert to hold the screws. 
+Assembly- Assemble the pcb and XIAO, and insert into the bottom case then put on the top case screw and add the heated insert to hold the screws. Either order both side assembly or solder on the keys and the microcontroller.
 
 | Part | Quantity | Notes |
 |------|----------|--------|
