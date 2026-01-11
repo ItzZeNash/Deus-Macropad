@@ -1,3 +1,7 @@
+Finished! 
+No image cuz files too big :(
+https://www.reddit.com/user/Revanence01/comments/1q9oqgf/deusmacropad/
+
 # Deus-Macropad
 A Macropad for personal use in Blender, Davinci and daily life. 4 keys
 
